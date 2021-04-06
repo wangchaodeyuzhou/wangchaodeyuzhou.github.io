@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-04-05T13:59:33.115Z</updated>
+  <updated>2021-04-05T12:27:22.801Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,32 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>进制转换</title>
-    <link href="http://example.com/2020/02/20/2.%E5%A0%86%E6%A0%88%E8%BF%9B%E8%A1%8C%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/"/>
-    <id>http://example.com/2020/02/20/2.%E5%A0%86%E6%A0%88%E8%BF%9B%E8%A1%8C%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/</id>
-    <published>2020-02-20T04:19:00.000Z</published>
-    <updated>2021-04-05T13:59:33.115Z</updated>
-    
-    <content type="html"><![CDATA[<br><h4 id="这是一种比较简单的方式进行进制转换，利用堆栈的先进后出，先求余后放入栈中，再从栈中拿出来。"><a href="#这是一种比较简单的方式进行进制转换，利用堆栈的先进后出，先求余后放入栈中，再从栈中拿出来。" class="headerlink" title="这是一种比较简单的方式进行进制转换，利用堆栈的先进后出，先求余后放入栈中，再从栈中拿出来。"></a>这是一种比较简单的方式进行进制转换，利用堆栈的先进后出，先求余后放入栈中，再从栈中拿出来。</h4><p><img src="https://img-blog.csdnimg.cn/20200226104451448.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNzkxMTM5,size_16,color_FFFFFF,t_70"></p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stack&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">stack</span> &lt;<span class="keyword">int</span>&gt;v;</span><br><span class="line">    <span class="keyword">int</span> n,d;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;请输入你要转换的十进制数:&quot;</span>;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; n;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;请输入你的目标进制数:&quot;</span>;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; d;</span><br><span class="line">    <span class="keyword">while</span>(n)</span><br><span class="line">    &#123;</span><br><span class="line">        v.push(n % d);</span><br><span class="line">        n = n / d;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">while</span>(!v.empty())</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; v.top();</span><br><span class="line">        v.pop();<span class="comment">///pop的返回值类型为空</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;br&gt;
-
-&lt;h4 id=&quot;这是一种比较简单的方式进行进制转换，利用堆栈的先进后出，先求余后放入栈中，再从栈中拿出来。&quot;&gt;&lt;a href=&quot;#这是一种比较简单的方式进行进制转换，利用堆栈的先进后出，先求余后放入栈中，再从栈中拿出来。&quot; class=&quot;headerlink&quot; tit</summary>
-      
-    
-    
-    
-    <category term="数据结构" scheme="http://example.com/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
-    
-    <category term="进制" scheme="http://example.com/tags/%E8%BF%9B%E5%88%B6/"/>
-    
-  </entry>
   
   <entry>
     <title>进制转换</title>
