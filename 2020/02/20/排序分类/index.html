@@ -473,6 +473,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
 
@@ -493,7 +496,18 @@
 <li>重复步骤1~3，直到排序完成。</li>
 </ul>
 <h4 id="1-2-动图演示"><a href="#1-2-动图演示" class="headerlink" title="1.2 动图演示"></a>1.2 动图演示</h4><p><img src="https://cdn.nlark.com/yuque/0/2020/gif/1489802/1592446841226-24efd00e-49e4-4215-8d26-05cc5a84cf29.gif" alt="image"></p>
-<h4 id="1-3-代码演示"><a href="#1-3-代码演示" class="headerlink" title="1.3 代码演示"></a>1.3 代码演示</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">BubbleSort</span><span class="params">(<span class="keyword">int</span> a[])</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> len=a.size();</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len-<span class="number">1</span>; i++)&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;len-<span class="number">1</span>-i;j++)&#123;</span><br><span class="line">           <span class="keyword">if</span>(a[j]&gt;a[j+<span class="number">1</span>])&#123;  <span class="comment">//相邻的元素两两相互比较</span></span><br><span class="line">            <span class="keyword">int</span> temp=a[j+<span class="number">1</span>]; <span class="comment">//元素交换</span></span><br><span class="line">             a[j+<span class="number">1</span>]=a[j];</span><br><span class="line">             a[j]=temp;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="1-3-代码演示"><a href="#1-3-代码演示" class="headerlink" title="1.3 代码演示"></a>1.3 代码演示</h4><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">void</span> <span class="token class-name">BubbleSort</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+    <span class="token keyword">int</span> len<span class="token operator">=</span>a<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>len<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> j<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>j<span class="token operator">&lt;</span>len<span class="token operator">-</span><span class="token number">1</span><span class="token operator">-</span>i<span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+           <span class="token keyword">if</span><span class="token punctuation">(</span>a<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">></span>a<span class="token punctuation">[</span>j<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>  <span class="token comment">//相邻的元素两两相互比较</span>
+            <span class="token keyword">int</span> temp<span class="token operator">=</span>a<span class="token punctuation">[</span>j<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">//元素交换</span>
+             a<span class="token punctuation">[</span>j<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">=</span>a<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>
+             a<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">=</span>temp<span class="token punctuation">;</span>
+            <span class="token punctuation">&#125;</span>
+        <span class="token punctuation">&#125;</span>
+    <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h4 id="1-4-排序分析"><a href="#1-4-排序分析" class="headerlink" title="1.4 排序分析"></a>1.4 排序分析</h4><p>算法时间最坏情况：O(n²)</p>
 <p>算法时间最好情况:  O(n)</p>
@@ -508,7 +522,10 @@
 <li>递归地（recursive）把小于基准值元素的子数列和大于基准值元素的子数列排序</li>
 </ul>
 <h4 id="2-2-动图演示"><a href="#2-2-动图演示" class="headerlink" title="2.2 动图演示"></a>2.2 动图演示</h4><p><img src="https://cdn.nlark.com/yuque/0/2020/gif/1489802/1592448061916-d754eceb-2b48-4428-8407-f1d357e751c3.gif" alt="image"></p>
-<h4 id="2-3-代码演示"><a href="#2-3-代码演示" class="headerlink" title="2.3 代码演示"></a>2.3 代码演示</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">void quickSort( int arr[] ,int left ,int right)&#123;</span><br><span class="line">        int len&#x3D;arr.size();</span><br><span class="line">          </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="2-3-代码演示"><a href="#2-3-代码演示" class="headerlink" title="2.3 代码演示"></a>2.3 代码演示</h4><pre class="line-numbers language-none"><code class="language-none">void quickSort( int arr[] ,int left ,int right)&#123;
+        int len&#x3D;arr.size();
+          
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h4 id="2-4-排序分析"><a href="#2-4-排序分析" class="headerlink" title="2.4 排序分析"></a>2.4 排序分析</h4><p>算法时间最坏情况：O(n2)</p>
 <p>算法时间最好情况:  O(nlog2n)</p>
@@ -526,7 +543,19 @@
 <li>重复步骤2~5。</li>
 </ul>
 <h4 id="3-2-动图演示"><a href="#3-2-动图演示" class="headerlink" title="3.2 动图演示"></a>3.2 动图演示</h4><p><img src="https://cdn.nlark.com/yuque/0/2020/gif/1489802/1592448913648-239be5e4-8f1f-49ec-a1fa-b193e461f737.gif" alt="image"></p>
-<h4 id="3-3-代码演示"><a href="#3-3-代码演示" class="headerlink" title="3.3 代码演示"></a>3.3 代码演示</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">void insertionSort(int a[])&#123;</span><br><span class="line">    int len&#x3D;a.size();</span><br><span class="line">    int preIndex,current;</span><br><span class="line">    for(int i&#x3D;1;i&lt;len;i++)&#123;</span><br><span class="line">       preIndex&#x3D;i-1;</span><br><span class="line">       current&#x3D;a[i];</span><br><span class="line">       while(preIndex&gt;&#x3D;0 &amp;&amp; a[preIndex] &gt; current)&#123;</span><br><span class="line">           a[preIndex+1]&#x3D;a[preIndex];</span><br><span class="line">           preIndex--;</span><br><span class="line">       &#125;</span><br><span class="line">        a[preIndex+1] &#x3D; current;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="3-3-代码演示"><a href="#3-3-代码演示" class="headerlink" title="3.3 代码演示"></a>3.3 代码演示</h4><pre class="line-numbers language-none"><code class="language-none">void insertionSort(int a[])&#123;
+    int len&#x3D;a.size();
+    int preIndex,current;
+    for(int i&#x3D;1;i&lt;len;i++)&#123;
+       preIndex&#x3D;i-1;
+       current&#x3D;a[i];
+       while(preIndex&gt;&#x3D;0 &amp;&amp; a[preIndex] &gt; current)&#123;
+           a[preIndex+1]&#x3D;a[preIndex];
+           preIndex--;
+       &#125;
+        a[preIndex+1] &#x3D; current;
+    &#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h4 id="3-4-排序分析"><a href="#3-4-排序分析" class="headerlink" title="3.4 排序分析"></a>3.4 排序分析</h4><p>算法时间最坏情况：O(n2)</p>
 <p>算法时间最好情况:  O(n)</p>
@@ -554,7 +583,21 @@
 <li>n-1趟结束，数组有序化了。</li>
 </ul>
 <h4 id="5-2-动图演示"><a href="#5-2-动图演示" class="headerlink" title="5.2 动图演示"></a><strong>5.2 动图演示</strong></h4><p>**<br>**<img src="https://cdn.nlark.com/yuque/0/2020/gif/1489802/1592450252179-148507bd-0fe1-4f12-8849-f0d60e864222.gif" alt="image"></p>
-<h4 id="5-3-代码实现"><a href="#5-3-代码实现" class="headerlink" title="5.3 代码实现"></a>5.3 代码实现</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">void selectSort(int a[])&#123;</span><br><span class="line">   int len&#x3D;a.size();</span><br><span class="line">   int minIndex,temp;</span><br><span class="line">   for(int i&#x3D;0;i&lt;len-1;i++)&#123;</span><br><span class="line">       minIndex&#x3D;i;</span><br><span class="line">      for(int j&#x3D;i+1;j&lt;len;j++)&#123;</span><br><span class="line">        if(a[j]&lt;a[minIndex])&#123;  &#x2F;&#x2F;找最小的元素</span><br><span class="line">           minIndex&#x3D;j;        &#x2F;&#x2F;保存最小元素索引，以便以后交换</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">       temp&#x3D;a[i];</span><br><span class="line">       a[i]&#x3D;a[minIndex];</span><br><span class="line">       a[minIndex]&#x3D;temp;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="5-3-代码实现"><a href="#5-3-代码实现" class="headerlink" title="5.3 代码实现"></a>5.3 代码实现</h4><pre class="line-numbers language-none"><code class="language-none">void selectSort(int a[])&#123;
+   int len&#x3D;a.size();
+   int minIndex,temp;
+   for(int i&#x3D;0;i&lt;len-1;i++)&#123;
+       minIndex&#x3D;i;
+      for(int j&#x3D;i+1;j&lt;len;j++)&#123;
+        if(a[j]&lt;a[minIndex])&#123;  &#x2F;&#x2F;找最小的元素
+           minIndex&#x3D;j;        &#x2F;&#x2F;保存最小元素索引，以便以后交换
+        &#125;
+      &#125;
+       temp&#x3D;a[i];
+       a[i]&#x3D;a[minIndex];
+       a[minIndex]&#x3D;temp;
+   &#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h4 id="5-4-排序分析"><a href="#5-4-排序分析" class="headerlink" title="5.4 排序分析"></a>5.4 排序分析</h4><p>算法时间最坏情况：O(n2)</p>
 <p>算法时间最好情况:  O(n2)</p>
