@@ -79,7 +79,7 @@
       
       <i class="fas fa-cloud-sun" style="zoom: 0.6;"></i>
       
-      <span>ai</span>
+      <span>关于爱情</span>
     </a>
     
   </li>
@@ -193,7 +193,7 @@
 			
 			    <i class="fa-fw fas fa-cloud-sun"></i>
 			
-			ai
+			Ai
 		</a>
           
         </li>
@@ -609,41 +609,41 @@
 <p><strong>总结：HDFS****块大小设置主要取决于磁盘传输速率</strong></p>
 <h2 id="第二章-HDFS的shell操作"><a href="#第二章-HDFS的shell操作" class="headerlink" title="第二章 HDFS的shell操作"></a>第二章 HDFS的shell操作</h2><h4 id="2-1基本语法"><a href="#2-1基本语法" class="headerlink" title="2.1基本语法"></a>2.1基本语法</h4><p>$HADOOP_HOME/bin/hadoop fs 具体命令 或 $HADOOP_HOME/bin/hdfs dfs 具体命令</p>
 <p>执行的都是 org.apache.hadoop.fs.FsShell</p>
-<h4 id="2-2命令大全"><a href="#2-2命令大全" class="headerlink" title="2.2命令大全"></a>2.2命令大全</h4><p>[-appendToFile <localsrc> … <dst>]</p>
-<p>​    [-cat [-ignoreCrc] <src> …]</p>
-<p>​    [-checksum <src> …]</p>
+<h4 id="2-2命令大全"><a href="#2-2命令大全" class="headerlink" title="2.2命令大全"></a>2.2命令大全</h4><p>[-appendToFile <localsrc> … <dst>]</dst></localsrc></p>
+<p>​    [-cat [-ignoreCrc] <src> …]</src></p>
+<p>​    [-checksum <src> …]</src></p>
 <p>​    [-chgrp [-R] GROUP PATH…]</p>
 <p>​    [-chmod [-R] &lt;MODE[,MODE]… | OCTALMODE&gt; PATH…]</p>
 <p>​    [-chown [-R] [OWNER][:[GROUP]] PATH…]</p>
-<p>​    [-copyFromLocal [-f] [-p] <localsrc> … <dst>]</p>
-<p>​    [-copyToLocal [-p] [-ignoreCrc] [-crc] <src> … <localdst>]</p>
-<p>​    [-count [-q] <path> …]</p>
-<p>​    [-cp [-f] [-p] <src> … <dst>]</p>
-<p>​    [-createSnapshot <snapshotDir> [<snapshotName>]]</p>
-<p>​    [-deleteSnapshot <snapshotDir> <snapshotName>]</p>
-<p>​    [-df [-h] [<path> …]]</p>
-<p>​    [-du [-s] [-h] <path> …]</p>
+<p>​    [-copyFromLocal [-f] [-p] <localsrc> … <dst>]</dst></localsrc></p>
+<p>​    [-copyToLocal [-p] [-ignoreCrc] [-crc] <src> … <localdst>]</localdst></src></p>
+<p>​    [-count [-q] <path></path> …]</p>
+<p>​    [-cp [-f] [-p] <src> … <dst>]</dst></src></p>
+<p>​    [-createSnapshot <snapshotDir> [<snapshotName>]]</snapshotName></snapshotDir></p>
+<p>​    [-deleteSnapshot <snapshotDir> <snapshotName>]</snapshotName></snapshotDir></p>
+<p>​    [-df [-h] [<path></path> …]]</p>
+<p>​    [-du [-s] [-h] <path></path> …]</p>
 <p>​    [-expunge]</p>
-<p>​    [-get [-p] [-ignoreCrc] [-crc] <src> … <localdst>]</p>
-<p>​    [-getfacl [-R] <path>]</p>
-<p>​    [-getmerge [-nl] <src> <localdst>]</p>
+<p>​    [-get [-p] [-ignoreCrc] [-crc] <src> … <localdst>]</localdst></src></p>
+<p>​    [-getfacl [-R] <path></path>]</p>
+<p>​    [-getmerge [-nl] <src> <localdst>]</localdst></src></p>
 <p>​    [-help [cmd …]]</p>
-<p>​    [-ls [-d] [-h] [-R] [<path> …]]</p>
-<p>​    [-mkdir [-p] <path> …]</p>
-<p>​    [-moveFromLocal <localsrc> … <dst>]</p>
-<p>​    [-moveToLocal <src> <localdst>]</p>
-<p>​    [-mv <src> … <dst>]</p>
-<p>​    [-put [-f] [-p] <localsrc> … <dst>]</p>
-<p>​    [-renameSnapshot <snapshotDir> <oldName> <newName>]</p>
-<p>​    [-rm [-f] [-r|-R] [-skipTrash] <src> …]</p>
-<p>​    [-rmdir [–ignore-fail-on-non-empty] <dir> …]</p>
-<p>​    [-setfacl [-R] [{-b|-k} {-m|-x <acl_spec>} <path>]|[–set <acl_spec> <path>]]</p>
-<p>​    [-setrep [-R] [-w] <rep> <path> …]</p>
-<p>​    [-stat [format] <path> …]</p>
-<p>​    [-tail [-f] <file>]</p>
-<p>​    [-test -[defsz] <path>]</p>
-<p>​    [-text [-ignoreCrc] <src> …]</p>
-<p>​    [-touchz <path> …]</p>
+<p>​    [-ls [-d] [-h] [-R] [<path></path> …]]</p>
+<p>​    [-mkdir [-p] <path></path> …]</p>
+<p>​    [-moveFromLocal <localsrc> … <dst>]</dst></localsrc></p>
+<p>​    [-moveToLocal <src> <localdst>]</localdst></src></p>
+<p>​    [-mv <src> … <dst>]</dst></src></p>
+<p>​    [-put [-f] [-p] <localsrc> … <dst>]</dst></localsrc></p>
+<p>​    [-renameSnapshot <snapshotDir> <oldName> <newName>]</newName></oldName></snapshotDir></p>
+<p>​    [-rm [-f] [-r|-R] [-skipTrash] <src> …]</src></p>
+<p>​    [-rmdir [–ignore-fail-on-non-empty] <dir> …]</dir></p>
+<p>​    [-setfacl [-R] [{-b|-k} {-m|-x <acl_spec>} <path></path>]|[–set <acl_spec> <path></path>]]</acl_spec></acl_spec></p>
+<p>​    [-setrep [-R] [-w] <rep> <path></path> …]</rep></p>
+<p>​    [-stat [format] <path></path> …]</p>
+<p>​    [-tail [-f] <file>]</file></p>
+<p>​    [-test -[defsz] <path></path>]</p>
+<p>​    [-text [-ignoreCrc] <src> …]</src></p>
+<p>​    [-touchz <path></path> …]</p>
 <p>​    [-usage [cmd …]]</p>
 <p>Hadoop命令分类：</p>
 <p>(1) 本地——》HDFS</p>
@@ -751,7 +751,7 @@
 <h5 id="3-3-4下载文件"><a href="#3-3-4下载文件" class="headerlink" title="3.3.4下载文件"></a>3.3.4下载文件</h5><p>/**   * 下载文件   * <strong>@throws</strong> Exception    * <strong>@throws</strong> IllegalArgumentException    */  <strong>public</strong> <strong>void</strong>  getTest() <strong>throws</strong> Exception {    fs.copyToLocalFile(<strong>new</strong> Path(“/eclipse/hello.txt”), <strong>new</strong>  Path(“E:\“));  }</p>
 <h5 id="3-3-5移动文件或更改名字"><a href="#3-3-5移动文件或更改名字" class="headerlink" title="3.3.5移动文件或更改名字"></a>3.3.5移动文件或更改名字</h5><p>/**   * 移动文件或更改名字   * <strong>@throws</strong> Exception    * <strong>@throws</strong> IllegalArgumentException    */  @Test  <strong>public</strong> <strong>void</strong>  moveTest() <strong>throws</strong> Exception {    <strong>boolean</strong> b = fs.rename(<strong>new</strong> Path(“/a.txt”), <strong>new</strong>  Path(“/eclipse/“));    System.*<strong>out*</strong>.println(b);  }</p>
 <h5 id="3-3-6删除文件"><a href="#3-3-6删除文件" class="headerlink" title="3.3.6删除文件"></a>3.3.6删除文件</h5><p>/**   * 删除文件   * <strong>@throws</strong> IOException    * <strong>@throws</strong> IllegalArgumentException    */  @Test  <strong>public</strong> <strong>void</strong>  delTest() <strong>throws</strong>  Exception {    //第二个参数表示是否要递归删除    <strong>boolean</strong> b = fs.delete(<strong>new</strong>  Path(“/a1.txt”),<strong>false</strong>);        System.*<strong>out*</strong>.println(b);  }</p>
-<h5 id="3-3-7查看目录信息-全是文件信息，不返回文件夹信息"><a href="#3-3-7查看目录信息-全是文件信息，不返回文件夹信息" class="headerlink" title="3.3.7查看目录信息(全是文件信息，不返回文件夹信息)"></a>3.3.7查看目录信息(全是文件信息，不返回文件夹信息)</h5><p>/**   * 查看目录信息(全是文件信息，不返回文件夹信息)   * <strong>@throws</strong> Exception    * <strong>@throws</strong> IllegalArgumentException    * <strong>@throws</strong> FileNotFoundException    */  @Test  <strong>public</strong> <strong>void</strong>  lsTest() <strong>throws</strong> Exception  {    //对二个参数是否递归目录信息    RemoteIterator<LocatedFileStatus>  lfs = fs.listFiles(<strong>new</strong>  Path(“/eclipse”), <strong>true</strong>);        <strong>while</strong>(lfs.hasNext()){      LocatedFileStatus  next = lfs.next();      System.<em><strong>out*</strong>.println(“文件的全路径：”+next.getPath());      System.<em><strong>out*</strong>.println(“最近访问时间：”+<strong>new</strong> Date(next.getAccessTime()));      System.<em><strong>out*</strong>.println(“文件大小的为：”+next.getLen());      System.<em><strong>out*</strong>.println(“文件块大小的为：”+next.getBlockSize());            System.<em><strong>out*</strong>.println(“文件块存放的位置：”+Arrays.<em>toString</em>(next.getBlockLocations()));      System.<em><strong>out*</strong>.println(“<em><strong><strong><strong>快信息</strong></strong></strong></em></em></em></em></em></em>**</em>“);      BlockLocation[]  blockLocations = next.getBlockLocations();      <strong>for</strong> (BlockLocation b : blockLocations) {       System.*<strong>out*</strong>.println(“本块副本所在datanode主机：”+Arrays.<em>toString</em>(b.getHosts()));       System.*<strong>out*</strong>.println(“本块的大小：”+b.getLength());       System.*<strong>out*</strong>.println(“本块在整个文件中的起始偏移量：”+b.getOffset());      }    }      }</p>
+<h5 id="3-3-7查看目录信息-全是文件信息，不返回文件夹信息"><a href="#3-3-7查看目录信息-全是文件信息，不返回文件夹信息" class="headerlink" title="3.3.7查看目录信息(全是文件信息，不返回文件夹信息)"></a>3.3.7查看目录信息(全是文件信息，不返回文件夹信息)</h5><p>/**   * 查看目录信息(全是文件信息，不返回文件夹信息)   * <strong>@throws</strong> Exception    * <strong>@throws</strong> IllegalArgumentException    * <strong>@throws</strong> FileNotFoundException    */  @Test  <strong>public</strong> <strong>void</strong>  lsTest() <strong>throws</strong> Exception  {    //对二个参数是否递归目录信息    RemoteIterator<LocatedFileStatus>  lfs = fs.listFiles(<strong>new</strong>  Path(“/eclipse”), <strong>true</strong>);        <strong>while</strong>(lfs.hasNext()){      LocatedFileStatus  next = lfs.next();      System.<em><strong>out*</strong>.println(“文件的全路径：”+next.getPath());      System.<em><strong>out*</strong>.println(“最近访问时间：”+<strong>new</strong> Date(next.getAccessTime()));      System.<em><strong>out*</strong>.println(“文件大小的为：”+next.getLen());      System.<em><strong>out*</strong>.println(“文件块大小的为：”+next.getBlockSize());            System.<em><strong>out*</strong>.println(“文件块存放的位置：”+Arrays.<em>toString</em>(next.getBlockLocations()));      System.<em><strong>out*</strong>.println(“<em><strong><strong><strong>快信息</strong></strong></strong></em></em></em></em></em></em>**</em>“);      BlockLocation[]  blockLocations = next.getBlockLocations();      <strong>for</strong> (BlockLocation b : blockLocations) {       System.*<strong>out*</strong>.println(“本块副本所在datanode主机：”+Arrays.<em>toString</em>(b.getHosts()));       System.*<strong>out*</strong>.println(“本块的大小：”+b.getLength());       System.*<strong>out*</strong>.println(“本块在整个文件中的起始偏移量：”+b.getOffset());      }    }      }</LocatedFileStatus></p>
 <h5 id="3-3-8查看文件夹信息"><a href="#3-3-8查看文件夹信息" class="headerlink" title="3.3.8查看文件夹信息"></a>3.3.8查看文件夹信息</h5><p>/**   * 查看文件夹信息   * <strong>@throws</strong> IOException    * <strong>@throws</strong> IllegalArgumentException    * <strong>@throws</strong> FileNotFoundException    <em>/  @Test  <strong>public</strong> <strong>void</strong>  lsTest2() <strong>throws</strong>  Exception {    FileStatus[]  ls = fs.listStatus(<strong>new</strong>  Path(“/“));    <strong>for</strong> (FileStatus fs : ls) {      System.<em><strong>out*</strong>.println(fs.isDirectory()?”文件夹”:”文件”);      System.<strong>*out***.println(“文件夹或者文件的全路径：”+fs.getPath());      System.*<strong>out*</strong>.println(“</strong></em>************</em>************”);    }      }</p>
 <h5 id="3-3-9读取hdfs中的文件"><a href="#3-3-9读取hdfs中的文件" class="headerlink" title="3.3.9读取hdfs中的文件"></a>3.3.9读取hdfs中的文件</h5><p>/**   * 读取hdfs中的文件   * <strong>@throws</strong> IOException    * <strong>@throws</strong> IllegalArgumentException    */  @Test  <strong>public</strong> <strong>void</strong>  readFileTest() <strong>throws</strong>  Exception {    FSDataInputStream  fis = fs.open(<strong>new</strong>  Path(“/abc.txt”));        BufferedReader  br = <strong>new</strong>  BufferedReader(<strong>new</strong>  InputStreamReader(fis));      String len = <strong>null</strong>;    <strong>while</strong>((len=br.readLine())!=<strong>null</strong>) {      System.*<strong>out*</strong>.println(len);    }        br.close();    fis.close();  }</p>
 <h5 id="3-3-10向hdfs文件写入内容"><a href="#3-3-10向hdfs文件写入内容" class="headerlink" title="3.3.10向hdfs文件写入内容"></a>3.3.10向hdfs文件写入内容</h5><p>/**   * 向hdfs文件写入内容   * <strong>@throws</strong> IOException    * <strong>@throws</strong> IllegalArgumentException    */  @Test  <strong>public</strong> <strong>void</strong>  writeFileTest() <strong>throws</strong>  Exception {        FSDataOutputStream  fos = fs.append(<strong>new</strong>  Path(“/abc.txt”));        BufferedWriter  bw = <strong>new</strong>  BufferedWriter(<strong>new</strong>  OutputStreamWriter(fos));        bw.write(“hello”);        bw.close();    fos.close();  }</p>
