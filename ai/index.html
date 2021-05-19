@@ -838,24 +838,7 @@
     </a>
 </div>
 
-<script type="text/javascript">
-	var arr=document.querySelectorAll(".box-page");
-	for (var i = 0; i<arr.length; i++) {
-		for(var j=0;j<3;j++){
-		for(var k=0;k<3;k++){
-		  var divs=document.createElement("div");
-		  //创建空元素
-		  divs.style.cssText="width :100px;height:100px;border:2px solid #fff;box-sizing:border-box;position:absolute;background-image:url(image/a"+(i+1)+".jpg);background-size:300px 300px";//设置属性
-		  arr[i].appendChild(divs);//添加到dom树
-		  divs.style.left=k*100+"px";
-		    divs.style.top=j*100+"px";
 
-		    divs.style.backgroundPositionX=-k*100+"px";
-		      divs.style.backgroundPositionY=-j*100+"px";
-			}
-		}
-	}
-</script
 <script src="/libs/tocbot/tocbot.min.js"></script>
 <script>
     $(function () {
@@ -969,7 +952,9 @@
         left: 0px !important;
     }
     
-	.container{
+</style>
+<style type="text/css">
+ .container{
 		width: 300px;
 		height: 300px;
 		/*border: 1px solid #000; */
@@ -1060,8 +1045,26 @@
           transform: translateZ(0px) scale(1) rotateZ(0deg);
 		}
 	  }
-    
 </style>
+<script type="text/javascript">
+	var arr=document.querySelectorAll(".box-page");
+	for (var i = 0; i<arr.length; i++) {
+		for(var j=0;j<3;j++){
+		for(var k=0;k<3;k++){
+		  var divs=document.createElement("div");
+		  //创建空元素
+		  divs.style.cssText="width :100px;height:100px;border:2px solid #fff;box-sizing:border-box;position:absolute;background-image:url(image/a"+(i+1)+".jpg);background-size:300px 300px";//设置属性
+		  arr[i].appendChild(divs);//添加到dom树
+		  divs.style.left=k*100+"px";
+		    divs.style.top=j*100+"px";
+
+		    divs.style.backgroundPositionX=-k*100+"px";
+		      divs.style.backgroundPositionY=-j*100+"px";
+			}
+		}
+	}
+</script>
+</script>
 <div class="">
     
     <div class="row">
